@@ -1,4 +1,4 @@
-<h3> This is Pesov MVC[Model. View. Controller]</h3>
+# This is Pesova MVC[Model. View. Controller]
 
 The Model is connected to the app/Libraries/Database. it Loads the Database,
 
@@ -6,7 +6,7 @@ The Controller is connected to the Model, and Loads the view from the Model, $da
 
 Also change your .htaccess in Public/,htaccess to your folder name.
 
-# Load Your Database configs from app/config/config.php
+ Load Your Database configs from app/config/config.php
 
 Views are loaded from the index.php
 
