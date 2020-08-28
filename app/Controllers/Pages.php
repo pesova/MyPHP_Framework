@@ -3,7 +3,7 @@
 class Pages extends Controller {
     public function __construct()
     {
-        $this->postModal = $this->model('Post');
+    
     }
 
     public function index(){
@@ -18,7 +18,13 @@ class Pages extends Controller {
 
     }
 
-    public function about($id){
-        echo "this is it" . $id;
+    public function about(){
+        $data2 = [
+            'Peso' => 'Pesova FrameWork to hel',
+            'Version' => '1.0.1',
+            'app' => 'Share'
+        ];
+
+        $this->View('about', $data2);
     }
 }
