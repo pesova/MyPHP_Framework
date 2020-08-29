@@ -11,6 +11,9 @@ all of them
 //Load Config
 require_once 'config/config.php';
 
+// Load Helper
+require_once 'helpers/url_header.php';
+
 
 //Auto loader 
 //Loads each library automatically, so instead of requiring a file anytime we add one, we just do the autoload function

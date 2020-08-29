@@ -3,24 +3,7 @@
 require_once '../app/boostrap.php';
 
 //class fes
-class User {
-    public $name;
-    public $age;
 
-    //this function runs everytime this class in intantiated/called
-    public function __construct($name, $age)
-    {
-        $this->name = $name;
-        $this->age = $age;
-    }
-
-    //method(function)
-
-    public function matter(){
-        return $this->name;
-    }
-
-}
 
 // $user1 = new User("ppppppee", 38);
 //  echo "<br>";
