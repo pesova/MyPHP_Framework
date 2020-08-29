@@ -13,6 +13,7 @@ require_once 'config/config.php';
 
 // Load Helper
 require_once 'helpers/url_header.php';
+require_once 'helpers/session_helper.php';
 
 
 //Auto loader 
