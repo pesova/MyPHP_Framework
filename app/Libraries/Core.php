@@ -11,7 +11,7 @@ class Core {
 
     public function __construct()
     {
-        //print_r($this->getUrl());
+        // print_r($this->getUrl());
         $url = $this->getUrl();
 
         //look in controllers for first value
@@ -67,6 +67,7 @@ class Core {
             $url = explode('/', $url); //explode splits the string with what is being specified
             return $url;
         }
+        // echo $url;
 
     }
 }

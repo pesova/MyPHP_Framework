@@ -14,7 +14,7 @@ class Controller {
 
         //instantiate the model
 
-        return new $model();    
+        return new $model(); 
     }
 
     //Load Views
@@ -28,3 +28,5 @@ class Controller {
         }
     }
 }
+
+// echo "here";

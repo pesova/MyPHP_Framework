@@ -9,7 +9,7 @@ define('DB_NAME', 'oopDBtest'); //Put your database name here
 define('APPROOT', dirname(dirname(__FILE__))); // = C:\xampp\htdocs\OOP_PHP\my_Framework\app  or anywhere the root is uploaded
 
 //URL root
-define('URLROOT', 'http://localhost/OOP_PHP/my_Framework');
+define('URLROOT', 'http://localhost/OOP_PHP');
 
 //site name
 
@@ -17,3 +17,5 @@ define('SITENAME', 'PesovaAPP');
 
 //App version
 define('APPVERSION', '1.0.1');
+
+// echo "dmdk";
