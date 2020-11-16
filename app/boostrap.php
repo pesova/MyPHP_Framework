@@ -23,9 +23,5 @@ spl_autoload_register(function($className){
 });
 $start = new Core;
 
-// require_once 'Libraries/Core.php';
-// require_once 'Libraries/Controller.php';
-// require_once 'Libraries/Database.php';
-
 
 

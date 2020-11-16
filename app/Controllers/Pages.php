@@ -20,7 +20,7 @@ class Pages extends Controller {
 
     public function about(){
         $data2 = [
-            'Peso' => 'Pesova FrameWork to hel',
+            'Peso' => 'Pesova FrameWork built with PHP',
             'Version' => '1.0.1',
             'app' => 'Share'
         ];
