@@ -23,8 +23,10 @@
           <div class="col-6">
               <a href="<?php echo URLROOT; ?>/posts/show/<?php echo $post->postId; ?>" class="btn btn-dark btn-block">View Post</a>
           </div>
-            <div class="col-6">
-              <i title="Heart" id="heart_icon" style="font-size: 2rem;" class="la la-heart-o pull-right"></i>
+            <div class="col-6 " id="div_heart">
+                <input type="checkbox" class="pull-right" onclick="heart_post(this)" name="heart" id="heart_icon<?php echo $post->postId ?>">
+                <label class="pull-right" for="heart_icon<?php echo $post->postId ?>" ></label>
+              <!-- <i title="Heart" id="heart_icon" style="font-size: 2rem;" class="la la-heart-o pull-right"></i> -->
             </div>
         </div>
      </span>

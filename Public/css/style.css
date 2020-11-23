@@ -13,11 +13,60 @@ body {
     /* background-color: red; */
 }
 
-#heart_icon {
-    color: blue;
-    cursor: pointer;
+#div_heart {
+    font-family: 'LineAwesome';
 }
 
-#heart_icon:hover {
+#div_heart:not(:checked)>input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+#div_heart>input:checked:before {
+    content: '\f233';
+    color: blue;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+#div_heart>label:before {
+    content: '\f234';
+    color: blue;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+
+/*
+#div_heart>input:checked>label:before {
+    content: '\f233';
+    color: blue;
+    cursor: pointer;
+    font-size: 2rem;
+} */
+
+#div_heart>input:checked~label:before {
+    content: '\f233';
+    color: blue;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+
+/* 
+#heart_icon:before {
+    font-family: 'LineAwesome';
+    content: '\f234';
+    color: blue;
+    cursor: pointer;
+} */
+
+#div_heart>label:active {
+    position: relative;
+    top: 2px;
+    /* This makes the icon toggle a bit down when its been clicked */
+}
+
+#div_heart>label:hover:before {
     color: red;
 }
