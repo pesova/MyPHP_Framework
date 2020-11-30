@@ -7,6 +7,7 @@
 
       $this->postModel = $this->model('Post');
       $this->userModel = $this->model('User');
+      $this->likesModel = $this->model('Like');
     }
 
     public function index(){
@@ -17,6 +18,15 @@
         'posts' => $posts
       ];
 
+      foreach ($data['posts'] as $post) {
+
+        if($this->likesModel->ifUserExist($_SESSION['user_id'], $post->postId) == true){
+          $_SESSION['userHasLikedPost_id'.$post->postId] = true;
+         }else {
+          $_SESSION['userHasLikedPost_id'.$post->postId] = false;
+         }
+        
+      }
       $this->view('posts/index', $data);
     }
 

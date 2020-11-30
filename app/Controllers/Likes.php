@@ -8,19 +8,19 @@
       $this->likesModel = $this->model('Like');
     }
 
-    public function ifUserExists($userid, $post_id){
-        $userExists = $this->likesModel->ifUserExist($userid, $post_id);
+    // public function ifUserExists($userid, $post_id){
+    //     $userExists = $this->likesModel->ifUserExist($userid, $post_id);
 
-        if ($userExists) {
-           echo "user exist";
-          // return true;
-        } else{
-          echo "user dosent exist";
-          // return false;
-        }
+    //     if ($userExists) {
+    //        echo "user exist";
+    //       // return true;
+    //     } else{
+    //       echo "user dosent exist";
+    //       // return false;
+    //     }
 
-        // print_r($userExists);
-    }
+    //     // print_r($userExists);
+    // }
 
     public function getLikesById($post_id){
       // Get posts

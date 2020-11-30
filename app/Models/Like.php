@@ -13,10 +13,12 @@
 
       $row = $this->db->resultSet();
       if (count($row) > 0) {
-        //  return "user exist";
+        //  return "user has liked post";
+       
         return true;
       } else{
-        // return "user dosent exist";
+        // return "user has'nt liked post";
+        
         return false;
       }
 
