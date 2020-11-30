@@ -20,6 +20,14 @@
       $this->view('posts/index', $data);
     }
 
+    public function getPostFromAjax(){
+      // Get posts
+      $posts = $this->postModel->getPosts();
+
+      // print json_encode($data);
+        echo json_encode($posts);
+    }
+
     public function add(){
       if($_SERVER['REQUEST_METHOD'] == 'POST'){
         // Sanitize POST array

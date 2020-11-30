@@ -24,8 +24,11 @@
               <a href="<?php echo URLROOT; ?>/posts/show/<?php echo $post->postId; ?>" class="btn btn-dark btn-block">View Post</a>
           </div>
             <div class="col-6 " id="div_heart">
-                <input type="checkbox" class="pull-right" onclick="heart_post(this)" name="heart" id="heart_icon<?php echo $post->postId ?>">
+            
+                <input type="checkbox" data-post_id="<?php echo $post->postId ?>" data-user_id="<?php echo $_SESSION['user_id'] ?>" class="pull-right" onclick="heart_post(this)" name="heart" id="heart_icon<?php echo $post->postId ?>">
+                 <small> <span id="like_count<?php echo $post->postId ?>" class="likes_count pull-right"><!-- like count displays here --> <?php echo $_COOKIE["post_".$post->postId]; ?></span> </small>
                 <label class="pull-right" for="heart_icon<?php echo $post->postId ?>" ></label>
+                <!-- <span class="likes_count pull-right">1</span> -->
               <!-- <i title="Heart" id="heart_icon" style="font-size: 2rem;" class="la la-heart-o pull-right"></i> -->
             </div>
         </div>

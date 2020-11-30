@@ -19,6 +19,14 @@
         <li class="nav-item">
           <a class="nav-link" href="<?php echo URLROOT?>/users/Logout">Logout</a>
         </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="<?php echo URLROOT?>/posts">Posts</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="<?php echo URLROOT?>/Dashboard">Dashboard</a>
+            </li>
       <?php else :?>
         <li class="nav-item">
           <a class="nav-link" href="<?php echo URLROOT?>/users/Login">Login</a>

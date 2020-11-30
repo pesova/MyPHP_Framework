@@ -70,3 +70,8 @@ body {
 #div_heart>label:hover:before {
     color: red;
 }
+
+.likes_count {
+    position: relative;
+    top: 23px;
+}
