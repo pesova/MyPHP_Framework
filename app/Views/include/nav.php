@@ -27,6 +27,10 @@
             <li class="nav-item">
               <a class="nav-link" href="<?php echo URLROOT?>/Dashboard">Dashboard</a>
             </li>
+
+            <li class="nav-item">
+                <b><p class="nav-link">Logged in As <?php echo $_SESSION['user_name']; ?></p></b>
+            </li>
       <?php else :?>
         <li class="nav-item">
           <a class="nav-link" href="<?php echo URLROOT?>/users/Login">Login</a>

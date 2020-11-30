@@ -8,6 +8,7 @@ require APPROOT . '/Views/include/header.php';
         <h1><?php echo $data['Peso'];?></h1>
 
         <p class="lead">Hello</p>
+        <p class="lead">Pesova Built This Framework</p>
     </div>
 </div>
 
